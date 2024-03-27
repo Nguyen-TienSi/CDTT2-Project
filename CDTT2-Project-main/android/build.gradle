@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.facebook.react:react-native:0.66.4'
+        // ... (các dependencies khác)
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':react-native-vector-icons')
+
+    // ... (các dependencies khác)
+}
+
+// Rest of your build.gradle file...
