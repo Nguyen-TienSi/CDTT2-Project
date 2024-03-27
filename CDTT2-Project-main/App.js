@@ -13,10 +13,8 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: '',
-    alignItems: '',
-    pa
-
+    justifyContent: 'center', // căn giữa theo chiều dọc
+    alignItems: 'center', // căn giữa theo chiều ngang
   },
 });
 

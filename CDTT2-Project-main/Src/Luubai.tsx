@@ -33,15 +33,19 @@ const LuuBai = () => {
 
 const styles = StyleSheet.create({
     avt: {
-        width: 50,
-        height: 50,
-        borderRadius: 50
+        width: 60, // Slightly larger for better visibility
+        height: 60,
+        borderRadius: 30, // Fully round images
     },
     item: {
         flexDirection: 'row',
         alignItems: 'center',
-        margin: 15
+        margin: 15,
+        paddingVertical: 10, // Add some vertical padding
+        borderBottomWidth: 1, // Add a subtle separator
+        borderBottomColor: '#eee', // Soft color for the separator
     }
 });
+
 
 export default LuuBai;
