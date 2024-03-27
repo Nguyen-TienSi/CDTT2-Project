@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import HomeScreen from '../CDTT2-Project-main/Src/HomeScreen'; // Import HomeScreen từ đường dẫn tương ứng
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <HomeScreen/>
     </View>
   );
 };
@@ -12,8 +13,10 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: '',
+    alignItems: '',
+    pa
+
   },
 });
 

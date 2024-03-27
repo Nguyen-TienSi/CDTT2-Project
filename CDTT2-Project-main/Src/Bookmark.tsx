@@ -5,7 +5,7 @@ const Bookmark = () => {
     return (
         <>
         <Text>
-            HEloowafaa
+            BookMarrk
         </Text>
         </>
     );
