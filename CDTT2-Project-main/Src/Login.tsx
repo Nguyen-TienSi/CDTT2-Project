@@ -1,4 +1,4 @@
-User
+
 import React, { useState } from 'react';
 import { Alert, Image, SafeAreaView, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -62,8 +62,7 @@ const Login = () => {
                 <TouchableOpacity style={styles.button} onPress={handleLoginPress}>
                     <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
-                <Text> Pass:{credentials.password}</Text>
-                <Text> {credentials.email}</Text>
+                
             </View>
             <View>
                 <Image source={require('../assets/icon.jpg')} />

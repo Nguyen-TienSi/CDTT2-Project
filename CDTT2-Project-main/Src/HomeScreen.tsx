@@ -1,19 +1,19 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import LuuBai from './Luubai';
+import Login from './Login';
 
 const HomeScreen = () => {
     return (
         <View style={styles.container}>
-            <LuuBai/>
+            <Login/>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        paddingHorizontal: 20, // Slightly more padding on the sides
+    
+        paddingHorizontal: 0, // Slightly more padding on the sides
         paddingTop: 20, // More padding on the top for better spacing
         backgroundColor: '#f5f5f5', // Optional: Adds a light background color
     },

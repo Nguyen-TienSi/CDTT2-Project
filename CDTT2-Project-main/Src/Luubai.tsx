@@ -11,9 +11,11 @@ const LuuBai = () => {
     ];
 
     return (
-        <>
+        <>  
+            <View style={styles.daubai}>
             <Text style={{ padding: 15, backgroundColor: 'gray', color: 'white', textAlign: 'center', fontSize: 18 }}>Danh Sách Lưu bài</Text>
             <Text style={{ padding: 15, backgroundColor: 'gray', color: 'white', textAlign: 'center', fontSize: 26 }}>Add New</Text>
+            </View>
 
             <SectionList
                 sections={dataFake}
@@ -44,6 +46,11 @@ const styles = StyleSheet.create({
         paddingVertical: 10, // Add some vertical padding
         borderBottomWidth: 1, // Add a subtle separator
         borderBottomColor: '#eee', // Soft color for the separator
+    },
+    daubai:{
+        flexDirection: 'row',
+        margin: 20
+
     }
 });
 
