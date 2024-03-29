@@ -12,7 +12,7 @@ import { FlatList, Image, Text, View } from "react-native";
 const Demo = () => {
     return (
         <>
-        <Text style={{fontSize:15 ,backgroundColor:'red',padding:10,textAlign:'center'}}>Demo FlatList</Text>
+        <Text style={{fontSize:15 ,backgroundColor:'gray',padding:10,textAlign:'center'}}>Demo FlatList</Text>
         {/* <ScrollView >
             <View style={{margin:30}}>
                 <Text> Dat09</Text>
@@ -40,9 +40,9 @@ const Demo = () => {
             </View>
         </ScrollView> */}
         <FlatList data={dataFake} renderItem={({item}) =>
-            <View style={{margin:15}}>
+            <View style={{margin:15,}}>
                 <Text> {item.name}</Text>
-                <Image source={{uri:item.Image}} style={{ aspectRatio: 1,width: '200%', height: 200 }} />
+                <Image source={{uri:item.Image}} style={{ aspectRatio: 1,width: '200%', height: 200}} />
             </View>
             } />
         </>

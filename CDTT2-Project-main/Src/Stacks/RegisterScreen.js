@@ -1,26 +1,25 @@
-
 import React, { useState } from 'react';
-import { Alert, Image, SafeAreaView, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Alert, SafeAreaView, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Login = () => {
-    const [credentials, setCredentials] = useState({ email: '', password: '', remember: false, emailValid: true }); // Thêm trường emailValid vào state
+const RegisterScreen = () => {
+    const [credentials, setCredentials] = useState({ email: '', password: '', remember: false, emailValid: true });
 
     const handleInputChange = (name, value) => {
         setCredentials({ ...credentials, [name]: value });
     };
 
-    const handleLoginPress = () => {
+    const handleRegisterScreenPress = () => {
         console.log('Thông tin đăng nhập', credentials);
-        Alert.alert('Đăng nhập đã được nhấn', 'Đăng nhập.');
+        Alert.alert('Đăng ký đã được nhấn', 'Đăng ký.');
     }
     
     const validateEmail = () => {
         const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         if (!regexEmail.test(credentials.email)) {
-            setCredentials({ ...credentials, emailValid: false }); // Cập nhật trạng thái emailValid
+            setCredentials({ ...credentials, emailValid: false });
         } else {
-            setCredentials({ ...credentials, emailValid: true }); // Đảm bảo rằng emailValid là true khi email hợp lệ
+            setCredentials({ ...credentials, emailValid: true });
         }
     }
 
@@ -28,7 +27,7 @@ const Login = () => {
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor={'#ffffff'} barStyle={'dark-content'} />
             <View style={styles.title}>
-                <Text style={styles.titleText}>Login</Text>
+                <Text style={styles.titleText}>Đăng Kí</Text>
                 <Text style={styles.subtitleText}>Welcome to Our App</Text>
             </View>
             <View style={styles.form}>
@@ -51,22 +50,11 @@ const Login = () => {
                         value={credentials.password}
                         onChangeText={(value) => handleInputChange('password', value)}></TextInput>
                 </View>
-                <View style={styles.pass}>
-                    <TouchableOpacity onPress={() => Alert.alert('Sau nay tao lam chuyen trang')}>
-                        <Text style={styles.linkText}>Forgot Password?</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => Alert.alert('Sau nay Tao lam chuyen trang')}>
-                        <Text style={styles.linkText}>Register</Text>
-                    </TouchableOpacity>
-                </View>
-                <TouchableOpacity style={styles.button} onPress={handleLoginPress}>
-                    <Text style={styles.buttonText}>Login</Text>
-                </TouchableOpacity>
-                
             </View>
-            <View>
-                <Image source={require('../assets/icon.jpg')} />
-            </View>
+            <TouchableOpacity onPress={handleRegisterScreenPress} style={styles.button}>
+                <Text style={styles.buttonText}>Đăng Ký</Text>
+            </TouchableOpacity>
+            <Text style={styles.linkText}>Bạn đã có tài khoản? Đăng Nhập ngay</Text>
         </SafeAreaView>
     );
 }
@@ -115,6 +103,7 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 5,
         alignItems: 'center',
+        marginTop: 20,
     },
     buttonText: {
         color: '#ffffff',
@@ -127,15 +116,8 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold',
         marginBottom: 10,
-        marginEnd: 60
+        textAlign: 'center',
     },
-    pass: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginTop: 10,
-        marginRight: 10,
-        marginLeft: 10
-    }
 });
 
-export default Login;
+export default RegisterScreen;

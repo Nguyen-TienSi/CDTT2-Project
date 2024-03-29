@@ -1,23 +1,24 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Login from './Login';
+import Demo from './Demo';
 
 const HomeScreen = () => {
     return (
         <View style={styles.container}>
-            <Login/>
+            {/* <HeaderBookmark/>
+            <Bookmark/> */}
+            <Demo/>
+            
+            
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-    
-        paddingHorizontal: 0, // Slightly more padding on the sides
-        paddingTop: 20, // More padding on the top for better spacing
-        backgroundColor: '#f5f5f5', // Optional: Adds a light background color
+        paddingRight:15,
+        paddingLeft:15,
     },
 });
-
 
 export default HomeScreen;
