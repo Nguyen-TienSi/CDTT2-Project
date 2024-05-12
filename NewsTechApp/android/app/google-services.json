@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "268908789969",
+    "project_id": "newstechapp-8fc07",
+    "storage_bucket": "newstechapp-8fc07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268908789969:android:220ac37ba27a34c78745f0",
+        "android_client_info": {
+          "package_name": "com.newstechapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268908789969-o7kh84eis2vopvd08aeq4untfq2r5ge0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newstechapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "268908789969-6ql9dsuokj2joa52tmts5dv20sqma4ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPc5wNqcOs7JnCZ0qFecj1US0dV0ulLMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268908789969-6ql9dsuokj2joa52tmts5dv20sqma4ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
